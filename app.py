@@ -1,6 +1,7 @@
 from flask import Flask
 from flask_restplus import Resource, Api, fields
 from scrapper import despesas_total, despesas_por_funcao
+from flask_cors import CORS
 
 app = Flask(__name__)
 api = Api(app = app, 
